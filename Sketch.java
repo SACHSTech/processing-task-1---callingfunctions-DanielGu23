@@ -1,36 +1,41 @@
 import processing.core.PApplet;
 
+
+/* A program Sketch.java that sketches out a cat face and includes a turquoise background.
+ @author: D. Gu */
+
 public class Sketch extends PApplet {
 	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
   public void settings() {
 	// put your size call here
     size(400, 400);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
-    background(210, 255, 173);
+    background(0, 140, 128);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
   public void draw() {
-	  
+	
 	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
-
     stroke(255);
-    line(50, 125, 70, 50);  
+    ellipse(200, 200, 220, 220);
+    
+    stroke(255);
+    line(150, 125, 60, 50); 
+    line(120, 160, 60, 50);
+    line(250, 125, 340, 50); 
+    line(280, 160, 340, 50);
+    
+    stroke(0);
+    rect(125, 150, 40, 30);
+    ellipse(145, 165, 10, 10);
+    rect(235, 150, 40, 30);  
+    ellipse(255, 165, 10, 10);
+    triangle(175, 225, 225, 225, 200, 175);
+    noFill();
+    arc(250, 225, 100, 90, HALF_PI, PI);
+    arc(150, 225, 100, 90, 0, HALF_PI);
   }
   
-  // define other methods down here.
 }
