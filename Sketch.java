@@ -7,7 +7,7 @@ import processing.core.PApplet;
 public class Sketch extends PApplet {
 	
   public void settings() {
-	// Size of sketchpad
+	  // Size of sketchpad
     size(400, 400);
   }
 
